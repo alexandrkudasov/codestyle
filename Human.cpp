@@ -115,14 +115,14 @@ public:
         cout << "time: ";
         cin >> Time;
         for (int i = 0; i < Time; i++) {
-            int speed = rand() % 80;     //случайное нахождение скорости
-            int nap = rand() % 360; //случайный выбор напрявления движения 
+            int speed = rand() % 80;   
+            int nap = rand() % 360;  
             x1 = x + speed * cos(nap * PI / 180) / (R * PI / 180);
             y1 = y + speed * sin(nap * PI / 180) / cos(x * PI / 180) / (R * PI / 180);
 
-            double x_rad = x * PI / 180; //перевод координат в радианы
+            double x_rad = x * PI / 180; 
             double y_rad = y * PI / 180;
-            double x1_rad = x1 * PI / 180; //перевод координат в радианы
+            double x1_rad = x1 * PI / 180; 
             double y1_rad = y1 * PI / 180;
 
             double cos_x = cos(x_rad);
@@ -165,7 +165,7 @@ int main()
     firstHuman.SetSpeedMin(1);
     firstHuman.SetTime(60);
 
-    int t = firstHuman.GetTime();
+   
    firstHuman.SetLongitude();
     firstHuman.SetLatitude();
     firstHuman.GetWalking();
